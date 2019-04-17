@@ -1,80 +1,75 @@
 
-// Funciones en JavaScript
+// Funciones JavaScript
 
 function holaMundo() {
-    console.log("Hola Mundo !!")
+    console.log("Hola Mundo !!");
 }
 
-// holaMundo()
-// console.log(holaMundo())
+holaMundo();
+//console.log(holaMundo()); //undefined
+// Las funciones pueden devolver un valor indefinido. No siempre lo esperado
 
-// Las funciones pueden devilver un valor indefinido. No siempre lo esperado
-
-// función con parámetros
+// función con parámetros:
 function sumar(num_1, num_2){
-    var esNumero_num_1 = typeof num_1 == "number";
-    var esNumero_num_2 = typeof num_2 == "number";
+    let esNumero_num_1 = typeof num_1 == "number";
+    let esNumero_num_2 = typeof num_2 == "number";
 
     if(esNumero_num_1 && esNumero_num_2){
-        return num_1 + num_2
+        return num_1 + num_2;
     }else{
         console.log("error");
     }
-
 }
+console.log("suma: ",sumar(10,23));
 
-// console.log(sumar(1,2))
-
-// sumar solo los numeros de un arreglo:
+// Función para sumar solo los numeros de un arreglo:
 function sumarNumerosArreglo(numeros) {
-    var parametroDistintoDeNumber = false;
-    var resultado = 0;
-    for (var i=0; i<numeros.length;i++){
-        var esNumero = typeof num_1 == "number";
+    let parametroDistintoDeNumero = false;
+    let resultado = 0;
+    for (let i=0; i<numeros.length;i++){
+        let esNumero = typeof numeros[i] == "number";
         if(esNumero){
-            parametroDistintoDeNumber==true;
+            resultado+=numeros[i];
         }else{
-            resultado=resultado+numeros[i];
+            parametroDistintoDeNumero=true;
         }
     }
-    var respeusta={
-        esNumero:parametroDistintoDeNumber,
-        resultado:resultado
-    }
-    return respeusta;
-
+    let respuesta;
+    respuesta = {
+        noEsNumero: parametroDistintoDeNumero,
+        resultado1: resultado
+    };
+    return respuesta;
 }
-// console.log(sumarNumerosArreglo(1,2,3,4));
+console.log("Suma en arreglo1: ",sumarNumerosArreglo([1,2,3,4,5]));
+console.log("Suma en arreglo2: ",sumarNumerosArreglo([1,"2",3,4,5])); //error
 
-
-function cambiarMayusculas(nombre, funcion) {
+// Funcion que llama otra funcion por parámetros, concatenación:
+function invocarFunciones(nombre, funcion) {
     return  `Hola ${funcion(nombre)}`;
 }
-
+console.log(invocarFunciones("criss", convertirMayusculas));
 // No hay problema si una funcion es definida despues de ser invoacada.
 function convertirMayusculas(texto) {
     return texto.toUpperCase();
 }
-console.log(cambiarMayusculas("criss", convertirMayusculas()))
 
-
-function convertiraMinusculas(texto) {
+function convertirMinusculas(texto) {
     return texto.toLowerCase();
 }
+console.log(invocarFunciones("criss", convertirMinusculas));
 
 function agregarPuntoFinal(texto) {
     return texto +".";
 }
-console.log(cambiarMayusculas("criss", convertiraMinusculas()))
-
+console.log(convertirMinusculas("un excelente dia ", agregarPuntoFinal));
+console.log(invocarFunciones("un excelente dia", agregarPuntoFinal));
 
 function letraInicioPalabraNayuscula(texto){
 
-    var letrainicioMayuscula = texto[0].toUpperCase();
-    var restoPalabra =texto.slice(1,texto.length)
+    let letrainicioMayuscula = texto[0].toUpperCase();
+    let restoPalabra =texto.slice(1,texto.length);
     return letrainicioMayuscula + restoPalabra;
 }
 
-console.log(cambiarMayusculas("criss", letraInicioPalabraNayuscula()))
-
-
+console.log(invocarFunciones("criss", letraInicioPalabraNayuscula));
