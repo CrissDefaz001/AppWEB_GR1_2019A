@@ -134,3 +134,16 @@ const resultadoFind = arregloNumeros
     .find(n=>(n===7));
 console.log(resultadoFind);
 
+console.log(Math.sqrt(4));
+console.log(Math.sqrt(-4)); // NaN
+// NaN: se intenta operar con datos que probablemente no sean numeros
+
+const reduceArreglo = arregloNumeros
+    .reduce(
+        (valorActualNumero,valorActualArreglo)=>
+        {
+            return valorActualNumero + valorActualArreglo;
+        },12 // sumando un valor adicional
+    );
+console.log(reduceArreglo);
+
