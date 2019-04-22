@@ -14,7 +14,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CallBacks_01.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="102" lean-forward="true" selection-start-line="102" selection-end-line="102" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -31,6 +44,7 @@
       <list>
         <option value="$PROJECT_DIR$/funciones.js" />
         <option value="$PROJECT_DIR$/funciones2.js" />
+        <option value="$PROJECT_DIR$/CallBacks_01.js" />
       </list>
     </option>
   </component>
@@ -46,8 +60,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="clase3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="clase3" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -69,7 +93,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -83,7 +107,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.funciones2.js">
+  <component name="RunManager" selected="Node.js.CallBacks_01.js">
+    <configuration name="CallBacks_01.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="CallBacks_01.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
     <configuration name="funciones2.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="funciones2.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -111,9 +138,11 @@
       <item itemvalue="Node.js.funciones.js" />
       <item itemvalue="Node.js.intro_JavaScript.js" />
       <item itemvalue="Node.js.funciones2.js" />
+      <item itemvalue="Node.js.CallBacks_01.js" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.CallBacks_01.js" />
         <item itemvalue="Node.js.funciones2.js" />
         <item itemvalue="Node.js.intro_JavaScript.js" />
       </list>
@@ -133,11 +162,12 @@
       <workItem from="1555343847490" duration="79000" />
       <workItem from="1555376987587" duration="1022000" />
       <workItem from="1555378174827" duration="7739000" />
+      <workItem from="1555963187886" duration="2137000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14159000" />
+    <option name="totallyTimeSpent" value="15835000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -149,14 +179,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="556" y="73" width="1400" height="1000" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24945612" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.65842694" visible="true" weight="0.17569546" />
+      <window_info id="Structure" order="1" sideWeight="0.34157303" side_tool="true" visible="true" weight="0.17569546" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49925596" weight="0.32929516" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49925596" visible="true" weight="0.29027113" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39977974" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -172,6 +202,18 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/CallBacks_01.js</url>
+          <line>12</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/intro_JavaScript.js">
@@ -193,8 +235,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/funciones.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+        <state relative-caret-position="1491">
+          <caret line="71" column="47" lean-forward="true" selection-start-line="71" selection-start-column="47" selection-end-line="71" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -202,6 +244,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/archivo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="8" lean-forward="true" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0-a.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3-t.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CallBacks_01.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="102" lean-forward="true" selection-start-line="102" selection-end-line="102" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
