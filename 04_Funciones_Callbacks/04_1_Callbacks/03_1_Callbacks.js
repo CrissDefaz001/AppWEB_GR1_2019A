@@ -3,7 +3,7 @@ Callbacks: lee un archivo y agrega contenido
  */
 const fs=require('fs'); // fs: file systems.
 
-// Cada vez que se ejecuta el código, se escrbirá una nueva línea
+// Cada vez que se ejecuta el código, se escribirá una nueva línea en e archivo
 function agregarArchivo(nombreArchivo, contenidoArchivo, callback) {
     fs.readFile(nombreArchivo,'utf-8',
         (error, contenidoArchivoLeido)=>{
@@ -72,7 +72,7 @@ const arregloNombresArchivos=['a','b','c','d'];
 variosArchivos(arregloNombresArchivos,
     (arregloRespuestas)=>{
         console.log('Exito',arregloRespuestas);
-});
+    });
 
 // Funcion promesa
 // Mo requiere pasar callback como argumemnto.

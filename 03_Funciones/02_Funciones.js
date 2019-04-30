@@ -1,4 +1,3 @@
-
 // funciones anónimas
 function saludo() {
 
@@ -8,11 +7,11 @@ var nombre = function () {};
 console.log(saludo()+nombre());
 
 var mensaje =
-{
-    texto: function () { // funcion anónima
-        return "Buen día"
+    {
+        texto: function () { // funcion anónima
+            return "Buen día"
+        }
     }
-}
 console.log(mensaje);
 
 var arreglo= [function () {
@@ -115,7 +114,7 @@ console.log(arregloElementos);
 const arregloNumeros=[1,2,3,4,5,6,7,8,9,10]
 const filtrarNumeros=arregloNumeros
     .filter(n=>(n%2===0)); // filtra los pares
-                            // '===':
+// '===':
 console.log(filtrarNumeros);
 console.log(1=='1'); // true: misma direccion de memoria, es un numero
 console.log(1==='1'); // false: numeros y cadenas no se pueden comparar
@@ -146,4 +145,3 @@ const reduceArreglo = arregloNumeros
         },12 // sumando un valor adicional
     );
 console.log(reduceArreglo);
-

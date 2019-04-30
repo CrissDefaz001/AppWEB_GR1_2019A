@@ -1,5 +1,4 @@
-// Clase 3
-//crear arreglos con elementos en JavaScript
+// Crear arreglos con elementos en JavaScript
 
 var arreglo = new Array("elemento1", "elemento2");
 console.log(arreglo);
@@ -67,7 +66,7 @@ console.log(vocales);
 var inicio = vocales.shift();
 console.log(inicio);
 
-// eliminar pimer 
+// eliminar pimer
 console.log(vocales);
 var removerInicio = vocales.unshift();
 console.log(removerInicio);
@@ -102,7 +101,7 @@ console.log(arreglo_10.some(esNumero));
 console.log(arreglo_11.some(esNumero));
 
 var arreglo_14=['1','2','3'];
-console.log(arreglo_14.some(esNumero)); 
+console.log(arreglo_14.some(esNumero));
 
 // vincular, (no join)
 var datos={
@@ -129,7 +128,4 @@ var atributodsDatosCuenta=Object.keys(datosCuenta);
 console.log(atributodsDatosCuenta);
 console.log(atributodsDatosCuenta[0]);
 
-
 // Chrome: clic derecho > inspeccioanr > consola
-
-

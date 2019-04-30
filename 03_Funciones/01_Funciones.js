@@ -1,4 +1,3 @@
-
 // Funciones JavaScript
 
 function holaMundo() {
