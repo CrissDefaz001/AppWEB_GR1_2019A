@@ -19,7 +19,7 @@ function agregarArchivo(nombreArchivo, contenidoArchivo, callback) {
                         }
                     }
                 );
-            } else {
+            } else
                 fs.writeFile(
                     nombreArchivo,
                     contenidoArchivoLeido + contenidoArchivo,
