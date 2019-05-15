@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="pagina1, Criss"/>
+    <title>Hoja de Vida</title>
+</head>
+<style>
+    h1{
+        font-family: "Vivaldi",serif;
+        color: #99FFCC
+    }
+    h2{
+        font-family: "Times New Roman",cursive;
+        color: #396b94;
+    }
+    h3{
+        font-family: "Ink Free",serif;
+        color: #565091;
+    }
+    #cabecera{
+        background: cadetblue;
+    }
+    #cuerpo{
+        background: #649a8c;
+    }
+    #pie{
+        background: #7ba2b4;
+    }
+    .resaltado{
+        font-family: "SansSerif",serif;
+        color: #3d398b;
+        text-decoration: none;
+    }
+    .justificado{
+        text-align: justify;
+    }
+</style>
+<body bgcolor="#708090">
+    <div id = "cabecera"><br/>
+        <!--
+        <img> imagenes:
+        height and width trabajan tambien con porcentajes
+        No cambia el tamaño de la imagen,
+        sino de la relación de aspecto con la pantalla
+        -->
+        <img src="../imagenes/epn.png" width="64" height="64" alt="epn" style="position: absolute">
+        <h1 align="center">Escuela Politécnica Nacional</h1>
+        <h2 align="center">Facultad de Ingenieria de Sistemas</h2>
+        <h3 align="center">Ingenieria de Sistemas Informáticos y de Computación</h3><br/>
+    </div>
+    <div id="cuerpo">
+        <h2>Aplicaciones WEB</h2>
+        <h3>Hoja de Vida</h3>
+        <b>Información personal:</b>
+        <img src="../imagenes/profile.png" width="200" height="200" alt="Foto de Criss"
+             style="position: fixed; top: 100px; right: 10px">
+        <!-- position: fixed -> imagen flotante -->
+        <ol>
+            <!--
+            <ul> -> listas, no son necearias las <br></br>
+            <ol> -> lista numeradas
+            -->
+            <li>Nombre: Cristiano De Vinni</li>
+            <li>Fecha Nac: 1994/04/06</li>
+            <li>Estado Civil: V</li>
+            <li><a href="http://fis.epn.edu.ec" target="blank">
+                <img src="../imagenes/facebook.png"  width="40" height="40" alt="Facebook"></a></li>
+            <li><a href="http://twitter.com/" class="resaltado" target="blank">Twitter:</a></li>
+            <!--
+            URL's: Colocar htpps:// para buscar el enlace en exterior, ya que
+            sin http el servidor busca el recurso dentro del mismo proyecto
+            target="blank" -> el enlace se abrirá en otra página en blanco
+            -->
+        </ol>
+        Descripción:
+        <p class = "justificado">
+            ¿Tiene coherencia que el periodismo de opinión, dentro de su legítimo derecho a la
+            <a href="https://twitter.com/fabriciovelav/status/1127937560209174528" class="resaltado" target="blank">libertad de expresión</a>,
+            sea "zalamero" con el poder de turno (nacional, local, deportivo, etc)?
+            <br/>
+        </p>
+            <blockquote style="background-color: #b6d3b7; border-style: dot-dash;" class="justificado">
+                <i>
+                ¿se justifica o critica dependiendo del personaje para el que va la "zalamería"?
+                Para el análisis!. Por eso la importancia de que la comunicación sea un servicio público...
+                Sino entienden eso, seguirán haciendo "exitosos" a los más lamebotas.
+                Nos afecta terriblemente a todos porque el periodismo es el ejemplo de las demás profesiones y oficios.
+                </i>
+            </blockquote>
+        <p>
+            Como nos acostumbramos a los radicalismos, tenemos gente que cree en los extremos,
+            y que los periodistas debemos ubicarnos en uno de esos extremos.
+            No creo en eso, y me da igual que me llamen "tibio".
+            Desde mis trincheras seguiré teniendo la misma actitud: crítica, con respeto!
+        </p>
+
+        <b>Estudios:</b>
+        <ul>
+            <!-- No olvidar cerrar la etiquetas -->
+            <li type="square">Primaria: Escuela XYZ</li>
+            <li type="circle">Secundaia: Colegio XYZ</li>
+            <li type="disc">Superior: EPN</li>
+        </ul>
+    </div>
+    <div id="pie">
+        <b>Dirección y teléfono:</b>
+        <ul>
+            <li>Ladron de Guevara E11-253</li>
+            <li>(+593) 2 2976 300</li>
+        </ul>
+    </div>
+    <br/>
+    &#169 copyright
+    <br/>
+    &reg Marca XYZ
+    <br/>
+    <a href="#cabecera">Ir a cabecera</a>
+</body>
+</html>

@@ -31,60 +31,59 @@
     }
 </style>
 <body bgcolor="#483d8b">
-<div id = "cabecera"><br/>
-<h2 align="center">Escuela Politécnica Nacional</h2>
-<h3 align="center">Facultad de Ingenieria de Sistemas</h3>
-<h4 align="center">Ingenieria de Sistemas Informáticos y de Computación</h4><br/>
-</div>
-<div id="cuerpo">
-<h2>Aplicaciones WEB</h2>
-<h1>Hoja de Vida</h1>
+    <div id = "cabecera"><br/>
+        <h2 align="center">Escuela Politécnica Nacional</h2>
+        <h3 align="center">Facultad de Ingenieria de Sistemas</h3>
+        <h4 align="center">Ingenieria de Sistemas Informáticos y de Computación</h4><br/>
+    </div>
+    <div id="cuerpo">
+        <h2>Aplicaciones WEB</h2>
+        <h1>Hoja de Vida</h1>
+            <b>Información personal:</b> <!-- Negrillas: <b></b> -->
+            <!-- imagenes -->
+            <br/><br/>
+            <!-- height and width trabajan tambien con porcentajes
+            No de tamaño de la imagen, sino de la pantalla-->
+            <!--
+            <img src="../imagenes/me.png" width="128" height="128" alt="Foto de Criss">
+            <img src="../imagenes/profile.png" width="25%" height="25%"
+            alt="Foto de Criss" style="position: fixed; top: 120px; right: 50px">
+            -->
+            <img src="../imagenes/profile.png" width="200" height="200" alt="Foto de Criss"
+                 style="position: fixed; top: 100px; right: 10px">
+            <!-- position:fixed vuelve a la imagen flotante -->
+            <ol>
+            <li>Nombre: Cristiano De Vinni</li>
+            <li>Fecha Nac: 1994/04/06</li>
+            <li>Estado Civil: S</li>
+            <!-- URL's. Colocar htpps:// para que el enlace salga al exterior
+             Sin http el ervidor busca el recurso dentro del mismo proyecto-->
+            <!-- Para que el enlace se abra en otra página: target="blank"-->
+            <li><a href="http://fis.epn.edu.ec" target="blank">
+                <img src="../imagenes/facebook.png"  width="40" height="40" alt="Facebook"></a></li>
+            <li><a href="http://twitter.com/" class="resaltado" target="blank">Twitter:</a></li>
+            <br/>
+            </ol>
+            Descripción:
+            <br/>
+                <i>
 
-<p><b>Información personal:</b> <!-- Negrillas: <b></b> -->
-    <!-- imagenes -->
-    <br/>  <br/>
-    <!-- height and width trabajan tambien con porcentajes
-     No de tamaño de la imagen, sino de la pantalla-->
-   <!--
-    <img src="../imagenes/me.png" width="128" height="128" alt="Foto de Criss">
-      <img src="../imagenes/profile.png" width="25%" height="25%"
-         alt="Foto de Criss" style="position: fixed; top: 120px; right: 50px">
-    -->
-
-    <img src="../imagenes/profile.png" width="200" height="200" alt="Foto de Criss"
-         style="position: fixed; top: 100px; right: 10px">
-    <!-- position:fixed vuelve a la imagen flotante -->
-    <ol>
-    <li>Nombre: Cristiano De Vinni</li>
-    <li>Fecha Nac: 1994/04/06</li>
-    <li>Estado Civil: S</li>
-    <!-- URL's. Colocar htpps:// para que el enlace salga al exterior
-        Sin http el ervidor busca el recurso dentro del mismo proyecto-->
-    <!-- Para que el enlace se abra en otra página: target="blank"-->
-    <li><a href="http://fis.epn.edu.ec" target="blank">
-        <img src="../imagenes/facebook.png"  width="40" height="40" alt="Facebook"></a></li>
-    <li><a href="http://twitter.com/" class="resaltado" target="blank">Twitter:</a></li>
-    <br/>
-    Descripción:
-    <br/>
-    <p class = "justificado"><i>
-
-    ¿Tiene coherencia que el periodismo de opinión, dentro de su legítimo derecho a la
-    <a href="https://twitter.com/fabriciovelav/status/1127937560209174528" class="resaltado" target="blank">libertad de expresión</a>, sea
-    "zalamero" con el poder de turno (nacional, local, deportivo, etc)?
-    <blockquote style="background-color: blueviolet; border-style: dotted;" class="justificado">
-    O, ¿se justifica o critica dependiendo del personaje para el que va la "zalamería"?
-    Para el análisis!.
-    Por eso la importancia de que la comunicación sea un servicio público...
-    Sino entienden eso, seguirán haciendo "exitosos" a los más lamebotas.
-    Nos afecta terriblemente a todos porque el periodismo es el ejemplo de las demás profesiones y oficios.
-    </blockquote>
-
-<i/></p>
-    <br/>
+                </i>
+                <p class = "justificado">
+                    ¿Tiene coherencia que el periodismo de opinión, dentro de su legítimo derecho a la
+                    <a href="https://twitter.com/fabriciovelav/status/1127937560209174528" class="resaltado" target="blank">libertad de expresión</a>, sea
+                    "zalamero" con el poder de turno (nacional, local, deportivo, etc)?
+                    <blockquote style="background-color: blueviolet; border-style: dotted;" class="justificado">
+                    O, ¿se justifica o critica dependiendo del personaje para el que va la "zalamería"?
+                    Para el análisis!.
+                    Por eso la importancia de que la comunicación sea un servicio público...
+                    Sino entienden eso, seguirán haciendo "exitosos" a los más lamebotas.
+                    Nos afecta terriblemente a todos porque el periodismo es el ejemplo de las demás profesiones y oficios.
+                    </blockquote>
+                    <br/>
+                </p>
 
 
-</ol>
 
     <br/><b>Estudios:</b>
     <!-- Listas con <ul>, no son necearias las <br></br>-->
@@ -97,11 +96,11 @@
 </div>
 <div id="pie">
     <p>
-    <b>Dirección y teléfono:</b>
-    <ul>
-        <li>Ladron de Guevara E11-253</li>
-        <li>(+593) 2 2976 300</li><br/>
-    </ul>
+        <b>Dirección y teléfono:</b>
+        <ul>
+            <li>Ladron de Guevara E11-253</li>
+            <li>(+593) 2 2976 300</li><br/>
+        </ul>
     </p>
 </div>
 <br/>
