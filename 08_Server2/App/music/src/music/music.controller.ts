@@ -1,14 +1,14 @@
 import {Controller, Get, Res} from "@nestjs/common";
 import {MusicService} from "./music.service";
 
-@Controller()
+@Controller('/music')
 export class MusicController {
-    constructor(
-        private readonly _musicService: MusicService) { }
+    constructor(private readonly _musicService: MusicService) { }
 
-    @Get()
+    // get, post: decoradores
+    @Get('lista')
     listMusic(@Res() res) {
-        const arraySongs = this._musicService.bddMusic;
-        res.render('music/list-music', {arraySongs: arraySongs})
+        const array = this._musicService.bddMusic;
+        res.render('list-music', {arrayMusic: array})
     }
 }

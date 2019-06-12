@@ -5,8 +5,9 @@ import {join} from "path";
 
 async function bootstrap() {
   const app = await NestFactory
-      .create(AppModule,  { cors: true }) as NestExpressApplication;
+      .create(AppModule) as NestExpressApplication;
 
+  // { cors: true }
   app.setViewEngine("ejs");
   app.setBaseViewsDir(join(__dirname,'..','views'));
   await app.listen(3000);

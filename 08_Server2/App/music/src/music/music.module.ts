@@ -6,7 +6,7 @@ import {MusicController} from "./music.controller";
    imports:[], //Modulo
    controllers:[ MusicController ], // Controladores
    providers:[ MusicService ], // Servicios
-   exports:[] // Servicios externos
+   exports:[ MusicService ] // Servicios externos
 })
 
 export class musicModule {
