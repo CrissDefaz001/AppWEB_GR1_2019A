@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aplicaciones WEB II Bim</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="estilos/estilo.css">
+</head>
+<body>
+<h2>Formulario Básico</h2>
+<br/>
+<form action="" class="form-group">
+    <div class="form-group row">
+        <div class="col-lg-4">
+            <label for="nombre">Nombre</label>
+            <input class="form-control" id="nombre" type="text"
+                   placeholder="Nombre:" required>
+        </div>
+        <div class="col-lg-4">
+            <label for="correo">Correo</label>
+            <input class="form-control" id="correo" type="text"
+                   placeholder="nombre@example.com" required>
+        </div>
+        <div class="col-lg-4">
+            <label for="opcion">Elige una opción</label>
+            <select class="form-control" id="opcion">
+                <option value="opcion1">Opcion 1</option>
+                <option value="opcion2">Opcion 2</option>
+                <option value="opcion3">Opcion 3</option>
+                <option value="opcion4">Opcion 4</option>
+                <option value="opcion5">Opcion 5</option>
+            </select>
+        </div>
+        <div class="col-lg-4">
+            <label for="fecha">Fecha:</label>
+            <input class="form-control" id="fecha" type="text"
+                   placeholder="nombre@example.com" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="mensaje">Mensaje</label>
+        <textarea class="form-control" id="mensaje" placeholder="Esrcribe tu mensaje"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="archivo">Archivo</label>
+        <input type="file" id="archivo">
+        <p class="form-text text-muted">Maximo 2MB</p>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary">Enviar</button>
+    </div>
+</form>
+<script type="javascript" src="css/bootstrap.min.css"></script>
+<script type="javascript" src="js/jquery-3.4.1.min.js"></script>
+</body>
+</html>

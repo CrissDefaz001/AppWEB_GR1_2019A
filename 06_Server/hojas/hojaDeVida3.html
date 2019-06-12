@@ -2,42 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="pagina1, Criss"/>
+    <meta name="Hoja de Vida"/>
     <title>Hoja de Vida</title>
+    <!-- CSS Definido: -->
+    <link rel="stylesheet" type="text/css" href="../estilos/estilos.css">
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
 </head>
-<style>
-    h1{
-        font-family: "Vivaldi",serif;
-        color: #99FFCC;
-    }
-    h2{
-        font-family: "Times New Roman",cursive;
-        color: #396b94;
-    }
-    h3{
-        font-family: "Ink Free",serif;
-        color: #565091;
-    }
-    #cabecera{
-        background: cadetblue;
-    }
-    #cuerpo{
-        background: #649a8c;
-    }
-    #pie{
-        background: #7ba2b4;
-    }
-    .resaltado{
-        font-family: "SansSerif",serif;
-        color: #3d398b;
-        text-decoration: none;
-    }
-    .justificado{
-        text-align: justify;
-    }
-</style>
-<body bgcolor="#708090">
+
+<body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Inicio</a>
     <!--
@@ -82,16 +54,36 @@
         sino de la relación de aspecto con la pantalla
         -->
         <img src="../imagenes/epn.png" width="64" height="64" alt="epn" style="position: absolute">
-        <h1 align="center">Escuela Politécnica Nacional</h1>
-        <h2 align="center">Facultad de Ingenieria de Sistemas</h2>
-        <h3 align="center">Ingenieria de Sistemas Informáticos y de Computación</h3><br/>
+        <h1>Escuela Politécnica Nacional</h1>
+        <h2>Facultad de Ingenieria de Sistemas</h2>
+        <h3>Ingenieria de Sistemas Informáticos y de Computación</h3><br/>
     </div>
     <div id="cuerpo">
+
         <h2>Aplicaciones WEB</h2>
+        <br/>
+        <div id="video">
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Ry2BpCZm8Ss"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TmVFjctH7bU"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            <br/>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NMvMR-jNSKg"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_Fwf45pIAtM"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+
+        <br/>
         <h3>Hoja de Vida</h3>
         <b>Información personal:</b>
         <img src="../imagenes/profile.png" width="200" height="200" alt="Foto de Criss"
-             style="position: fixed; top: 100px; right: 10px">
+             style="position: fixed; top: 100px; right: 10px" class="margenes">
         <!-- position: fixed -> imagen flotante -->
         <ol>
             <!--
@@ -117,7 +109,7 @@
             sea "zalamero" con el poder de turno (nacional, local, deportivo, etc)?
             <br/>
         </p>
-            <blockquote style="background-color: #b6d3b7; border-style: dot-dash;" class="justificado">
+            <blockquote>
                 <i>
                 ¿se justifica o critica dependiendo del personaje para el que va la "zalamería"?
                 Para el análisis!. Por eso la importancia de que la comunicación sea un servicio público...
@@ -135,9 +127,9 @@
         <b>Estudios:</b>
         <ul>
             <!-- No olvidar cerrar la etiquetas -->
-            <li type="square">Primaria: Escuela XYZ</li>
-            <li type="circle">Secundaia: Colegio XYZ</li>
-            <li type="disc">Superior: EPN</li>
+            <li>Primaria: Escuela XYZ</li>
+            <li>Secundaia: Colegio XYZ</li>
+            <li>Superior: EPN</li>
         </ul>
     </div>
     <div id="pie">
@@ -147,6 +139,38 @@
             <li>(+593) 2 2976 300</li>
         </ul>
     </div>
+    <br/>
+    <b>Tablas</b>
+    <table>
+        <tr> <!-- tr: filas, td: celdas -->
+           <td>Pais</td>
+           <td>Año</td>
+           <td>Notas</td>
+           <td>xD</td>
+           <td>Tiempo</td>
+        </tr>
+        <tr>
+            <td>Colombia</td>
+            <td>2012</td>
+            <td>dasfafa</td>
+            <td>xD1</td>
+            <td>1 mes</td>
+        </tr>
+        <tr>
+            <td>Perú</td>
+            <td>2013</td>
+            <td>dafgth</td>
+            <td>xD2</td>
+            <td>1 mes</td>
+        </tr>
+        <tr>
+            <td>Argentina</td>
+            <td colspan="2">2014</td>
+            <td>adads</td>
+            <td>xD3</td>
+            <td>2 meses</td>
+        </tr>
+    </table>
     <br/>
     &#169 copyright
     <br/>

@@ -1,0 +1,90 @@
+body{
+    font-family: "Times New Roman", serif;
+    /* Si la imagen es pequeña, podemos repetirla a cualquier eje:*/
+    /* Automáticamente reemplado por Shortland*/
+    background: #99CC99 url("http://eskipaper.com/images/amazing-wallpapers-hd-1.jpg") repeat-y;
+
+}
+h1{
+    font-family: "Vivaldi",serif;
+    color: #286856;
+    text-align: center;
+}
+h2{
+    font-family: "Times New Roman",cursive;
+    color: #2e5677;
+    text-align: center;
+}
+h3{
+    font-family: "Ink Free",serif;
+    color: #565091;
+    text-align: center;
+}
+h4{
+    font-family: "Ink Free",serif;
+    color: #877091;
+}
+
+/*-- Partes de la cabecera, cuerpo y pie */
+#cabecera{
+    background: #83c6a8;
+}
+#cuerpo{
+    background: #649a8c;
+}
+#pie{
+    background: #7ba2b4;
+}
+.resaltado{
+    font-family: "SansSerif",serif;
+    color: #3d398b;
+    text-decoration: none;
+}
+.justificado{
+    text-align: justify;
+}
+/*
+li{
+    list-style-type: circle;
+}
+*/
+blockquote{
+    margin-bottom: 25px;
+    padding-top: 25px;
+    margin-right: 25px;
+    margin-left: 25px;
+    border-style: dotted;
+    border-color: #132230;
+    color: #132230;
+    background-color: #98ebd5;
+}
+.margenes{
+    margin-bottom: 25px;
+    padding-top: 25px;
+    margin-right: 25px;
+    margin-left: 25px;
+    border-style: dashed;
+    border-color: #2e5677;
+    color: #649a8c;
+}
+#video{
+    text-align: center;
+    /*align-content: center;*/
+    /*
+    display:block;
+    margin: 0 auto;
+    */
+}
+
+table{
+    background-color: #a184d1;
+    text-align: center;
+    align-content: center;
+    border: dashed #132230;
+    border-spacing: 5px;
+    mso-cellspacing: 28px;
+    /* border-collapse: collapse; */
+}
+td {
+    border: 1px solid #000
+}

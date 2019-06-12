@@ -1,0 +1,27 @@
+header{/*cabecera*/
+    background: rgba(149,249,199,0);
+    color: #132230;
+    text-align: left;
+}
+.color{
+    background: #132230;;
+    color: #ffffff;
+}
+.color2{
+    background: #132230;
+    color: #ffffff;
+}
+
+.main{
+    background: #ceb423;
+}
+
+footer{ /*Pie de página*/
+    background: #f1b0b7;
+    color: #1a445b;
+}
+
+aside{
+    background: #99FFCC;
+    color: rgba(0, 0, 0, 0.86);
+}
