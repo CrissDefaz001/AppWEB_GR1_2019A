@@ -1,9 +1,11 @@
 import {Injectable} from "@nestjs/common";
+import {Song} from "../../interfaces/song";
 
 @Injectable()
 export class MusicService {
     bddMusic=[];
     idMusic=1;
+    album=[];
 
     constructor(){
         const song ={
@@ -28,8 +30,41 @@ export class MusicService {
 
     list(song){
         song.id=this.idMusic;
-    //    this.id++;
+        this.idMusic++;
         this.bddMusic.push(song);
         return song;
     }
+
+    createNew(newSong: Song): Song {
+        newSong.id = this.idMusic;
+        this.idMusic++;
+        this.bddMusic.push(newSong);
+        return newSong;
+    }
+
+    findPorId(id: number):Song {
+        return this.bddMusic.find(
+            (song) => {
+                return song.id === id;
+            }
+        );
+    }
+
+    findByTitle(title: string):Song {
+        return this.bddMusic.find(
+            (song) => {
+                return song.nombre.toUpperCase().includes(title.toUpperCase());
+            }
+        );
+    }
+
+    /*
+    findByAlbum(album: string):Array<Song> {
+        this.bddMusic.find(
+            album =>{
+            }
+        );
+        return this.album
+    }
+    */
 }

@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Probando Typescript</title>
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../views/css/bootstrap.css">
 </head>
 <body>
     <div class="container">
-        <h1>Lista de canciones</h1>
+        <h1>My favouite music</h1>
+        <a href="/music/crear">
+            <button>Add new</button>
+        </a>
+        <br/>
+        <br/>
         <table class="table table-striped table-hover table-sm">
             <tr>
                 <th>title</th>
@@ -16,6 +21,7 @@
                 <th>artist</th>
                 <th>trackNum</th>
                 <th>genre</th>
+                <th>Options</th>
             </tr>
                 <% arrayMusic.forEach((music)=> { %>
             <tr>
