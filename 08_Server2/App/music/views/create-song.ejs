@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adding music</title>
+    <!--link rel="stylesheet" type="text/css" href="../views/css/bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Music Form</h2>
+        <p>Adding new Song:</p>
+        <form action="/music/crear" method="post" class="form-group">
+            <div class="form-group row">
+                <div class="col-lg-3">
+                    <label for="titleId">Title:</label>
+                    <input id="titleId" name="title" type="text" class="form-control" required>
+                </div>
+                <div class="col-lg-3">
+                    <label for="ArtistId">Artist:</label>
+                    <input id="ArtistId" name="artist" type="text" class="form-control" required>
+                </div>
+                <div class="col-lg-3">
+                    <label for="AlbumId">Album:</label>
+                    <input id="AlbumId" name="album" type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-lg-3">
+                    <label for="fechaId">Release Date:</label>
+                    <input id="fechaId" name="release" type="date" class="form-control">
+                </div>
+                <div class="col-lg-3">
+                    <label for="trackID">Track Num:</label>
+                    <input id="trackID" name="trackNum" type="number" min="0" step="1" class="form-control">
+                </div>
+                <div class="col-lg-3">
+                    <label for="tipoId">Genre:</label>
+                    <select name="genre" id="tipoId"  class="form-control">
+                        <option value="R&B">R&B</option>
+                        <option value="Electronic">Electronic</option>
+                        <option value="House" selected>House</option>
+                        <option value="Indie">Indie</option>
+                        <option value="Tech">Tech House</option>
+                        <option value="Instrumental">Instrumental</option>
+                        <option value="Funk">Funk</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <button type="reset" class="btn btn-outline-danger">Limpiar</button>
+                        <a href="/music/lista">
+                    <button type="button" class="btn btn-outline-dark">Cancelar</button></a>
+                    <button class="btn btn-outline-primary">Send data</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -14,15 +14,31 @@ export class MusicController {
     }
 
     @Get('crear')
-    crearLibro(@Res() res) {
-        res.render('music/create-song')
+    createSong(@Res() res) {
+        res.render('create-song')
+    }
+
+    @Get('editar')
+    removeSong(@Res() res) {
+        res.render('edit-song')
     }
 
     @Post('crear')
-    crearLibroPost(@Body() song: Song, @Res() res){
+    createSongPost(@Body() song: Song, @Res() res){
         song.trackNum = Number(song.trackNum);
         song.release = new Date(song.release);
         this._musicService.createNew(song);
+        res.redirect('/music/lista');
+    }
+
+    @Post('eliminar')
+    removeSongPost(@Res() res, @Body('id') id: number) {
+        this._musicService.removeById(id);
+        res.redirect('/music/lista');
+    }
+
+    @Post('editar')
+    updateSong(@Res() res){
         res.redirect('/music/lista');
     }
 }

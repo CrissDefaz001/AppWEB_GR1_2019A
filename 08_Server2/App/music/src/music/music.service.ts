@@ -23,7 +23,7 @@ export class MusicService {
             release:new Date(2015,5,20),
             artist:"Alina & Galimatias",
             trackNum:2,
-            genre:"Depp R&B"
+            genre:"R&B"
         };
         this.list(song2);
     }
@@ -58,13 +58,24 @@ export class MusicService {
         );
     }
 
-    /*
-    findByAlbum(album: string):Array<Song> {
-        this.bddMusic.find(
-            album =>{
+    removeById(id:number):Song[]{
+        const indice = this.bddMusic.findIndex(
+            (song) => {
+                return song.id === id
             }
         );
-        return this.album
+        this.bddMusic.splice(indice,1);
+        return this.bddMusic;
     }
-    */
+
+    updateSong(updatedSong: Song, id:number):Song[] {
+        const indice = this.bddMusic.findIndex(
+            (song) => {
+                return song.id === id
+            }
+        );
+        updatedSong.id = this.bddMusic[indice].id;
+        this.bddMusic[indice] = updatedSong;
+        return this.bddMusic;
+    }
 }
