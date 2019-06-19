@@ -42,18 +42,10 @@ export class MusicService {
         return newSong;
     }
 
-    findPorId(id: number):Song {
+    buscarPorId(id: number):Song {
         return this.bddMusic.find(
             (song) => {
                 return song.id === id;
-            }
-        );
-    }
-
-    findByTitle(title: string):Song {
-        return this.bddMusic.find(
-            (song) => {
-                return song.nombre.toUpperCase().includes(title.toUpperCase());
             }
         );
     }

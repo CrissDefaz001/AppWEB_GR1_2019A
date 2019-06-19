@@ -9,33 +9,35 @@
     <div class="container">
         <h2>Update Form</h2>
         <p>Updating song metadata:</p>
-        <form action="/music/editar" method="post" class="form-group">
+        <form
+                action="/music/editar/<%=music.id%>"
+                method="post" class="form-group">
             <div class="form-group row">
                 <div class="col-lg-3">
-                    <label for="titleId">Title:</label>
-                    <input id="titleId" name="title" type="text" class="form-control" required>
+                    <label for="title">Title:</label>
+                    <input id="title" name="title" type="text" class="form-control" required value="<%=music.title%>">
                 </div>
                 <div class="col-lg-3">
-                    <label for="ArtistId">Artist:</label>
-                    <input id="ArtistId" name="artist" type="text" class="form-control" required>
+                    <label for="Artist">Artist:</label>
+                    <input id="Artist" name="artist" type="text" class="form-control" required value="<%=music.artist%>">
                 </div>
                 <div class="col-lg-3">
-                    <label for="AlbumId">Album:</label>
-                    <input id="AlbumId" name="album" type="text" class="form-control">
+                    <label for="Album">Album:</label>
+                    <input id="Album" name="album" type="text" class="form-control" value="<%=music.album%>">
                 </div>
             </div>
             <div class="form-group row">
                 <div class="col-lg-3">
-                    <label for="fechaId">Release Date:</label>
-                    <input id="fechaId" name="release" type="date" class="form-control">
+                    <label for="fecha">Release Date:</label>
+                    <input id="fecha" name="release" type="date" class="form-control" value="<%=music.release%>">
                 </div>
                 <div class="col-lg-3">
-                    <label for="trackID">Track Num:</label>
-                    <input id="trackID" name="trackNum" type="number" min="0" step="1" class="form-control">
+                    <label for="track">Track Num:</label>
+                    <input id="track" name="trackNum" type="number" min="0" step="1" class="form-control" value="<%=music.trackNum%>">
                 </div>
                 <div class="col-lg-3">
-                    <label for="tipoId">Genre:</label>
-                    <select name="genre" id="tipoId"  class="form-control">
+                    <label for="tipo">Genre:</label>
+                    <select name="genre" id="tipo"  class="form-control">
                         <option value="R&B">R&B</option>
                         <option value="Electronic">Electronic</option>
                         <option value="House" selected>House</option>
