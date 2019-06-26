@@ -1,9 +1,9 @@
 export interface Song {
     id: number;
-    title: string;
+    titulo: string;
     album:  string;
-    release:Date;
-    artist: string;
+    lanzamiento:Date;
+    artista: string;
     trackNum: number;
-    genre:'R&B'|'Electronic'|'House'|'Indie'|'Tech House'|'Instrumental'|'Funk';
+    genero:'R&B'|'Electronic'|'House'|'Indie'|'Tech House'|'Instrumental'|'Funk';
 }

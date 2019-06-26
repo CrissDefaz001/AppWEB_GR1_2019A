@@ -1,0 +1,15 @@
+
+C
+estilos/estilos.css,4\4\44878f326a4f8372ec21a5b0371d6cbf1bd97da5
+B
+estilos/estilo.css,9\c\9c6c307221dda369d4a75d0d0d04a82899ea90e7
+A
+hojas/inicio.html,b\0\b00df0423fc4b9e7036e09d2db483528327a2c16
+B
+hojas/1.hoja1.html,9\3\938aecd45d3306feecc46a6770a442f7d6b23e07
+B
+hojas/testing.html,2\7\27764e04798fb0e6b0c3a96bfa53200441619840
+A
+hojas/saludo.html,9\9\99d0780defc622590a2ae32e54a9ab2d59fc8a4e
+C
+hojas/miTienda.html,8\4\847c21643c33e3068cf3a59b851ba7d97994f986

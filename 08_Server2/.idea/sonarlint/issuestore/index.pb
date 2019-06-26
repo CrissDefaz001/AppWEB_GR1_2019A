@@ -13,3 +13,13 @@ O
 App/music/views/create-song.ejs,3\a\3a32983144736147ac8003f9712675c1a449a01c
 N
 App/music/views/list-music.ejs,c\b\cb23b869b3b77eec6fe8277f803156f1999dcea6
+R
+"App/calculadora/src/app.service.ts,8\d\8d99c667b8868a7fce0b46ce0a69000377dbffc7
+U
+%App/calculadora/src/app.controller.ts,7\a\7aedeb53a3a97b8c999cf791530ef947dcae6367
+L
+App/music/src/app.service.ts,6\2\62c2940ae3695d6c0659f1a6ccfcafaef74a4c58
+O
+App/music/src/app.controller.ts,b\4\b4bf4c0cf8ede5f35154554c70a3be6c050679a4
+E
+App/music/src/main.ts,f\5\f5a5cfc7d25da0026f20d66959a9612b6c2cd5c4

@@ -3,71 +3,112 @@ import {Song} from "../../interfaces/song";
 
 @Injectable()
 export class MusicService {
-    bddMusic=[];
+    bddMusica=[];
     idMusic=1;
-    album=[];
 
     constructor(){
-        const song ={
-            title:"Magnets",
+        const cancion1 ={
+            titulo:"Magnets", //.split(' ')[0]
             album:"Caracal",
-            release:new Date(2015,1,11),
-            artist:"Disclosure ft Lorde",
+            lanzamiento:new Date(2015,1,4),
+            artista:"Disclosure ft Lorde",
             trackNum:3,
-            genre:"Electronic"
+            genero:"Electronic"
         };
-        this.list(song);
-        const song2 ={
-            title:"Show me",
-            album:"Urban Flora",
-            release:new Date(2015,5,20),
-            artist:"Alina & Galimatias",
-            trackNum:2,
-            genre:"R&B"
+        this.listarCanciones(cancion1);
+        const cancion2 ={
+            titulo:"In my mind",
+            album:"Unknown",
+            lanzamiento:new Date(2019,5,17),
+            artista:"Jealous Friend & Olivia Addams",
+            trackNum:5,
+            genero:"R&B"
         };
-        this.list(song2);
+        this.listarCanciones(cancion2);
+        const cancion3 ={
+            titulo:"Never Be Like You ft Kai",
+            album:"Skin",
+            lanzamiento:new Date(2017,11,19),
+            artista:"Flume",
+            trackNum:1,
+            genero:"Electronic"
+        };
+        this.listarCanciones(cancion3);
+        const cancion4 ={
+            titulo:"On A Sunday",
+            album:"Unknown",
+            lanzamiento:new Date(2019,2,11),
+            artista:"Ester Peony",
+            trackNum:1,
+            genero:"Indie"
+        };
+        this.listarCanciones(cancion4);
+        const cancion5 ={
+            titulo:"Modestep",
+            album:" Evolution Theory ",
+            lanzamiento:new Date(2015,6,21),
+            artista:"Another Day",
+            trackNum:1,
+            genero:"Indie"
+        };
+        this.listarCanciones(cancion5);
+
     }
 
-    list(song){
-        song.id=this.idMusic;
+    listarCanciones(cancion){
+        cancion.id=this.idMusic;
         this.idMusic++;
-        this.bddMusic.push(song);
-        return song;
+        this.bddMusica.push(cancion);
+        return cancion;
     }
 
-    createNew(newSong: Song): Song {
+    crearCancion(newSong: Song): Song {
         newSong.id = this.idMusic;
         this.idMusic++;
-        this.bddMusic.push(newSong);
+        this.bddMusica.push(newSong);
         return newSong;
     }
 
     buscarPorId(id: number):Song {
-        return this.bddMusic.find(
+        return this.bddMusica.find(
             (song) => {
                 return song.id === id;
             }
         );
     }
 
-    removeById(id:number):Song[]{
-        const indice = this.bddMusic.findIndex(
-            (song) => {
-                return song.id === id
-            }
-        );
-        this.bddMusic.splice(indice,1);
-        return this.bddMusic;
+    buscarPorNombre(titulo: string):Song[] {
+        if(titulo!=='' && titulo!==null){
+            return this.bddMusica.filter(
+                (cancion) => {
+                    return cancion.titulo.toUpperCase().includes(titulo.toUpperCase());
+                }
+            );
+        }else{
+            return this.bddMusica;
+        }
     }
 
-    updateSong(updatedSong: Song, id:number):Song[] {
-        const indice = this.bddMusic.findIndex(
+    eliminarPorId(id:number):Song[]{
+        const indice = this.bddMusica.findIndex(
             (song) => {
                 return song.id === id
             }
         );
-        updatedSong.id = this.bddMusic[indice].id;
-        this.bddMusic[indice] = updatedSong;
-        return this.bddMusic;
+        console.log("cancion a borrar:");
+        console.log(indice);
+        this.bddMusica.splice(indice,1);
+        return this.bddMusica;
+    }
+
+    actualizarCancion(cancionActualizada: Song, id:number):Song[] {
+        const indice = this.bddMusica.findIndex(
+            (song) => {
+                return song.id === id
+            }
+        );
+        cancionActualizada.id = this.bddMusica[indice].id;
+        this.bddMusica[indice] = cancionActualizada;
+        return this.bddMusica;
     }
 }

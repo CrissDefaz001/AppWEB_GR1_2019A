@@ -2,52 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Probando Typescript</title>
-    <!--link rel="stylesheet" type="text/css" href="../views/css/bootstrap.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"-->
+    <title>Listando canciones</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
-<body>
+<body background="https://images.wallpaperscraft.com/image/light_faded_background_85547_1366x768.jpg">
 <div class="container">
-    <h2>Music Library</h2>
+    <h2>Catálogo de canciones</h2>
+    <p>Listando canciones</p>
     <a href="/music/crear">
-        <button class="btn btn-dark">Add new</button>
+        <button class="btn btn-dark">Agregar nuevo</button>
     </a>
-    <br/>
-    <br/>
+        <form action="/music/buscar" method="post">
+            <br/>
+            <div class="form-group row">
+                <div class="col-lg-3">
+                    <label for="busquedaId" hidden></label>
+                    <input type="text" id="busquedaId" placeholder="Buscar canción" name="busqueda" class="form-control">
+                </div>
+                <div class="col-lg-3">
+                    <button type="submit" class="btn btn-success mb-2">Buscar</button>
+                </div>
+            </div>
+        </form>
     <table class="table table-hover table-sm">
-        <thead class="thead-dark">
+        <thead class="table-dark">
             <tr>
-                <th>Title</th>
-                <th>Artist</th>
-                <th>Album</th>
-                <th>Release</th>
+                <th>Num</th>
+                <th>Titulo</th>
+                <th>Artista</th>
+                <th>Álbum</th>
+                <th>Fecha de Lanzamiento</th>
                 <th>TrackNum</th>
-                <th>Genre</th>
-                <th colspan="2">Actions</th>
+                <th>Género</th>
+                <th>Acciones</th>
             </tr>
         </thead>
         <tbody>
         <% arrayMusic.forEach((music)=> { %>
             <tr>
-                <td><%=music.title %></td>
-                <td><%=music.artist %></td>
+                <td><%=music.id %></td>
+                <td><%=music.titulo %></td>
+                <td><%=music.artista %></td>
                 <td><%=music.album %></td>
-                <td><%=music.release.toLocaleString() %></td>
+                <td><%=music.lanzamiento.toLocaleString("es-ES",{
+                        year: "numeric",
+                        month: "2-digit",
+                        day: "2-digit"
+                    }) %></td>
                 <td><%=music.trackNum %></td>
-                <td><%=music.genre %></td>
+                <td><%=music.genero %></td>
                 <td>
                     <div class="row">
                         <div class="col-lg-4">
                             <a href="/music/editar/<%=music.id%>">
-                                <input id="id" name="id" type="number" value="<%=music.id%>" hidden>
-                                <button class="btn btn-primary">Editar</button>
+                                <button class="btn btn-info">Editar</button>
                             </a>
                         </div>
                         <div class="col-lg-4">
                             <form action="/music/eliminar" method="post">
-                                <label class="sr-only"  for="id"></label><input id="id" name="id" type="number" value="<%=music.id %>" hidden>
                                 <button class="btn btn-danger">Eliminar</button>
                             </form>
                         </div>

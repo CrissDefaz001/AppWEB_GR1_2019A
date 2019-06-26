@@ -2,34 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Updating song metadata</title>
+    <title>Actualizando canciones</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
     <div class="container">
-        <h2>Update Form</h2>
-        <p>Updating song metadata:</p>
+        <h2>Formulario de Actualización</h2>
+        <p>Actualizando metadatos de <b>"<%=music.titulo%>"</b></p>
         <form
                 action="/music/editar/<%=music.id%>"
-                method="post" class="form-group">
+            method="post" class="form-group">
             <div class="form-group row">
                 <div class="col-lg-3">
-                    <label for="title">Title:</label>
-                    <input id="title" name="title" type="text" class="form-control" required value="<%=music.title%>">
+                    <label for="title">Título:</label>
+                    <input id="title" name="titulo" type="text" class="form-control" required value="<%=music.titulo%>">
                 </div>
                 <div class="col-lg-3">
-                    <label for="Artist">Artist:</label>
-                    <input id="Artist" name="artist" type="text" class="form-control" required value="<%=music.artist%>">
+                    <label for="Artist">Artista:</label>
+                    <input id="Artist" name="artista" type="text" class="form-control" required value="<%=music.artista%>">
                 </div>
                 <div class="col-lg-3">
-                    <label for="Album">Album:</label>
+                    <label for="Album">Álbum:</label>
                     <input id="Album" name="album" type="text" class="form-control" value="<%=music.album%>">
                 </div>
             </div>
             <div class="form-group row">
                 <div class="col-lg-3">
-                    <label for="fecha">Release Date:</label>
-                    <input id="fecha" name="release" type="date" class="form-control" value="<%=music.release%>">
+                    <label for="fecha">Fecha de Lanzamiento:</label>
+                    <input id="fecha" name="lanzamiento" type="date" class="form-control" value="<%=music.lanzamiento.toLocaleString("es-ES",{
+                        year: "numeric",
+                        month: "2-digit",
+                        day: "2-digit"
+                    }) %>">
                 </div>
                 <div class="col-lg-3">
                     <label for="track">Track Num:</label>
@@ -37,7 +41,7 @@
                 </div>
                 <div class="col-lg-3">
                     <label for="tipo">Genre:</label>
-                    <select name="genre" id="tipo"  class="form-control">
+                    <select name="genero" id="tipo"  class="form-control">
                         <option value="R&B">R&B</option>
                         <option value="Electronic">Electronic</option>
                         <option value="House" selected>House</option>
@@ -53,11 +57,10 @@
                     <button type="reset" class="btn btn-outline-danger">Limpiar</button>
                     <a href="/music/lista">
                         <button type="button" class="btn btn-outline-dark">Cancelar</button></a>
-                    <button class="btn btn-outline-primary">Send data</button>
+                    <button class="btn btn-outline-primary">Enviar información</button>
                 </div>
             </div>
         </form>
     </div>
-
 </body>
 </html>
