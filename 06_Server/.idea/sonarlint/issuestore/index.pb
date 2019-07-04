@@ -13,3 +13,9 @@ A
 hojas/saludo.html,9\9\99d0780defc622590a2ae32e54a9ab2d59fc8a4e
 C
 hojas/miTienda.html,8\4\847c21643c33e3068cf3a59b851ba7d97994f986
+F
+hojas/hojaDeVida3.html,9\d\9d841f25bbc34c423e20683128bf9fcaf9d24f5a
+F
+hojas/hojaDeVida2.html,b\7\b722549a0a061baa246663f66f2c2ef4b71528bc
+?
+hojas/mapa.html,9\6\9652ddd8c194bba2eb1bbaac46224c8ede42a8d6

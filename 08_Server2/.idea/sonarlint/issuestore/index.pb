@@ -23,3 +23,13 @@ O
 App/music/src/app.controller.ts,b\4\b4bf4c0cf8ede5f35154554c70a3be6c050679a4
 E
 App/music/src/main.ts,f\5\f5a5cfc7d25da0026f20d66959a9612b6c2cd5c4
+K
+App/calculadora/src/main.ts,a\1\a18f124f5eee3fdaf1582a19825ebda32cf80bd8
+Q
+!App/calculadora/src/app.module.ts,8\c\8c9db77d89edeedb456d6f54daec9d1ae0e6cfa4
+T
+$App/music/src/app.controller.spec.ts,7\c\7c3eeca3e113ed95dfb8b4c3053338c296ae3d30
+K
+App/music/src/app.module.ts,9\a\9aa38f693ea9ca2f5fde8f4dc6d009e01b316ae3
+F
+App/music/package.json,d\a\dab863de9862028558b6a3fe8835e9f50955dce2

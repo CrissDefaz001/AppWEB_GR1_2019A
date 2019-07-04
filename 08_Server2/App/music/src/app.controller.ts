@@ -22,6 +22,21 @@ export class AppController {
         'micookie2',
         2
     );
+    res.cookie(
+        'segura',
+        25,
+        {
+          signed:true
+        }
+    );
+    const cookiesegura = req.signedCookies.segura;
+    console.log(req.signedCookies);
+
+    if(cookiesegura){
+      console.log("Cookie segura", cookiesegura)
+    }else{
+      console.log("Cookie no es segura")
+    }
     res.send(cook)
   }
 
