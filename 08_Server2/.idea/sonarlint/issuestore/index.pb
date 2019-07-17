@@ -33,3 +33,13 @@ K
 App/music/src/app.module.ts,9\a\9aa38f693ea9ca2f5fde8f4dc6d009e01b316ae3
 F
 App/music/package.json,d\a\dab863de9862028558b6a3fe8835e9f50955dce2
+S
+#App/music/src/music/music.entity.ts,2\e\2e411a3dd8b00326427e23e00569d40f4ca30af5
+]
+-App/music/src/disquera/discografica.module.ts,6\c\6c6d38080fbe02f046c56650ce038ff9f502f721
+]
+-App/music/src/disquera/discografica.entity.ts,1\4\14a505bf5353bd5616f60c72ceeff913f85d406d
+]
+-App/music/src/interprete/interprete.module.ts,7\9\79938da8bfeb282eca9f3674a2255a9e5769558f
+\
+,App/music/src/interprete/interpreteEntity.ts,c\c\ccae68e23f29ad23f853ec5f99a33ca81f16b6e1
