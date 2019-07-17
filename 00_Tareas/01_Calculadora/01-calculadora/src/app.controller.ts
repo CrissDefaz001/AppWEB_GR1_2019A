@@ -21,8 +21,9 @@ export class AppController {
     resta(@Req() req, @Query() parametroConsulta,  @Res() res){
       const cookie1 = req.cookies;
       res.cookie('numero1', 6);
-     // res.send(cookie1);
-      const resultado = Number(cookie1.numero1) - Number(parametroConsulta.numero2);
+      console.log("Cookie valor: ",req.cookies);
+      const resultado = Number(req.cookies) - Number(parametroConsulta.numero2);
+      res.send(cookie1);
       return res.status(403).send('Resta: ' + resultado);
   }
 
@@ -38,6 +39,16 @@ export class AppController {
     return res.status(400).send('Division: ' + resultado);
   }
 
+  @Get('obtenerCookie')
+  obtenerCookie(@Res() res, @Req() req) {
+    const cook = req.cookies;
+    console.log(cook);
+    res.cookie(
+        'numero1',
+        2
+    );
+    res.send(cook)
+  }
 
 }
 
