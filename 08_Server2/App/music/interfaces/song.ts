@@ -5,5 +5,5 @@ export interface Song {
     lanzamiento:Date;
     artista: string;
     trackNum: number;
-    genero:'R&B'|'Electronic'|'House'|'Indie'|'Tech House'|'Instrumental'|'Funk';
+    genero:'R&B'|'Electronic'|'House'|'Indie'|'Tech House'|'Instrumental'|'Funk'|'Trap';
 }

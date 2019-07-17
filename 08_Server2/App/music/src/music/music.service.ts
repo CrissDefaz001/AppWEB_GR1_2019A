@@ -1,11 +1,16 @@
 import {Injectable} from "@nestjs/common";
 import {Song} from "../../interfaces/song";
+import {MusicEntity} from "./music.entity";
+import {Repository} from "typeorm";
+import {InjectRepository} from "@nestjs/typeorm";
 
 @Injectable()
 export class MusicService {
-    bddMusica=[];
-    idMusic=1;
+    bddMusica = [];
+    idMusic = 1;
 
+
+    /*
     constructor(){
         const cancion1 ={
             titulo:"Magnets", //.split(' ')[0]
@@ -111,4 +116,44 @@ export class MusicService {
         this.bddMusica[indice] = cancionActualizada;
         return this.bddMusica;
     }
+    */
+
+    constructor(@InjectRepository(MusicEntity)
+                private readonly _MusicRepository: Repository<MusicEntity>,) {
+        const music: any = {
+            titulo: "Magnets",
+            album: "Caracal",
+            lanzamiento: new Date(2015, 1, 4),
+            artista: "Disclosure ft Lorde",
+            trackNum: 3,
+            genero: "Electronic"
+        };
+        const objetoEntidad = this._MusicRepository.create(music);
+        this._MusicRepository
+            .save(objetoEntidad)
+            .then(
+                (datos) => {
+                    console.log('cancion creada')
+                }
+            )
+            .catch(
+                (error)=>{
+                    console.log('error')
+                }
+            );
+        this.crear(music)
+    }
+
+    buscar(parametrosBusqueda?):Promise<MusicEntity[]>{
+        return this._MusicRepository.find(parametrosBusqueda)
+    }
+
+    crear(nuevaCancion: Song):Promise<Song> {
+        const objetoEntidad=this._MusicRepository
+            .create(nuevaCancion)
+        return this._MusicRepository.save(objetoEntidad)
+    }
+
+
 }
+

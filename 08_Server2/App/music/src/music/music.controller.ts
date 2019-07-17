@@ -1,4 +1,4 @@
-import {Body, Controller, Get, Param, Post, Res} from "@nestjs/common";
+import {Body, Controller, Get, Param, Post, Query, Res} from "@nestjs/common";
 import {MusicService} from "./music.service";
 import {Song} from "../../interfaces/song";
 
@@ -6,6 +6,7 @@ import {Song} from "../../interfaces/song";
 export class MusicController {
     constructor(private readonly _musicService: MusicService) {
     }
+/*
 
     // get, post: decoradores
     @Get('lista')
@@ -62,4 +63,37 @@ export class MusicController {
             res.redirect('music/lista');
         }
     }
+*/
+    @Get('lista')
+    async listarCanciones(@Res() res) {
+        const array = await this._musicService.buscar();
+        res.render('list-music', {arrayMusic: array})
+    }
+
+    @Get('crear')
+    crearLibro(
+        @Res() res, @Query('mensaje') mensaje:string,) {
+        res.render('create-song',{ mensaje: mensaje })
+    }
+
+    @Post('crear')
+    crearCancionPost(@Body() song: Song, @Res() res) {
+        song.trackNum = Number(song.trackNum);
+        song.lanzamiento = new Date(song.lanzamiento);
+        this._musicService.crear(song);
+        console.log(formatDate( song.lanzamiento) +"****"+  song.lanzamiento);
+        res.redirect('/music/lista');
+        function formatDate(date) {
+            var d = new Date(date),
+                month = '' + (d.getMonth() + 1),
+                day = '' + d.getDate(),
+                year = d.getFullYear();
+
+            if (month.length < 2) month = '0' + month;
+            if (day.length < 2) day = '0' + day;
+
+            return [year, month, day].join('-');
+        }
+    }
 }
+
